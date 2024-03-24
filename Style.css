@@ -6,6 +6,9 @@
 .container{
     
 }
+/* .relative-sibling{
+    margin-right: -10000x;
+} */
 
 nav{
     height: 7vh;
@@ -87,11 +90,39 @@ img {
         display: none;
         
     }
+    .hambuger{
+        width: 20px;
+        /* background-color: violet; */
+        height: 4vh;
+        margin-right: -40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .line{
+        width: 20px;
+        height: 1vh;
+        background-color: blue;
+        border-radius: 40px;
+
+        
+    }
+    .hambuger-nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+        color: white;
+        margin-top: 20px;
+        margin-left: 100px;
+        height: 20vh;
+
+    }
     
     .hambuger:hover~ .hambuger-nav{
-        margin-left:-100px ;
+        margin-left:-10px ;
     }
-    ul:hover{
+    .sub-nav ul:hover{
         background-color: lightblue;
     }
     
@@ -108,10 +139,11 @@ img {
     h3{
         margin-right: -10vh;
     }
-    .relative-sibling .hambuger-nav{
-        position: relative;
-        
+    .relative-sibling{
+        position: absolute;
+        transform: translatey(200px);
     }
+    
     
     
 }
