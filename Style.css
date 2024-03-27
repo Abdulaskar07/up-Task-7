@@ -109,19 +109,23 @@ img {
     }
     .hambuger-nav{
         position: absolute;
+        width: 40vh;
         display: flex;
         flex-direction: column;
-        background-color: blue;
+        background-color: black;
         color: white;
+        align-items: center;
+        justify-content: center;
         margin-top: 20px;
         margin-left: 100px;
-        height: 20vh;
+        height: 100vh;
 
     }
     
     .hambuger:hover~ .hambuger-nav{
-        margin-left:-10px ;
-    }
+        margin-left:-30vh ;
+    } 
+    
     .sub-nav ul:hover{
         background-color: lightblue;
     }
